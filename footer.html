@@ -1,0 +1,264 @@
+
+<!-- ===================================== -->
+<!-- الشريط السفلي لمتجر قطع غيار السيارات -->
+<!-- footer.html -->
+<!-- ===================================== -->
+
+<style>
+.store-footer {
+    background: linear-gradient(120deg, #091d3c, #123c78);
+    color: #e2eaf6;
+    padding: 65px 7% 0;
+    font-family: 'Cairo', Tahoma, Arial, sans-serif;
+    direction: rtl;
+}
+
+.store-footer * {
+    box-sizing: border-box;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    gap: 35px;
+}
+
+.footer-column h3 {
+    color: white;
+    font-size: 19px;
+    margin: 0 0 22px;
+    font-weight: 800;
+}
+
+.footer-column h3::after {
+    content: "";
+    display: block;
+    width: 45px;
+    height: 3px;
+    background: #d62828;
+    margin-top: 12px;
+}
+
+.footer-column p {
+    font-size: 14px;
+    line-height: 2.1;
+    color: #c9d6e8;
+}
+
+.footer-column a {
+    display: block;
+    color: #c9d6e8;
+    font-size: 14px;
+    text-decoration: none;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+.footer-column a:hover {
+    color: #ff6868;
+    padding-right: 5px;
+}
+
+.footer-brand {
+    font-size: 23px;
+    color: white;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.footer-brand span {
+    color: #ff6262;
+}
+
+.footer-contact {
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer-contact a {
+    overflow-wrap: anywhere;
+}
+
+.footer-bottom {
+    border-top: 1px solid #ffffff27;
+    margin-top: 45px;
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    font-size: 13px;
+    color: #cfdaea;
+}
+
+.footer-back {
+    background: #d62828;
+    color: white !important;
+    padding: 10px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-back:hover {
+    background: #af1b1b;
+    transform: translateY(-3px);
+}
+
+/* الأجهزة اللوحية */
+
+@media (max-width: 950px) {
+    .footer-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* الهواتف */
+
+@media (max-width: 600px) {
+    .store-footer {
+        padding: 45px 6% 0;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer-brand {
+        font-size: 20px;
+    }
+}
+</style>
+
+
+<!-- ===================================== -->
+<!-- HTML الشريط السفلي -->
+<!-- ===================================== -->
+
+<footer class="store-footer" id="site-footer">
+
+    <div class="footer-grid">
+
+        <!-- معلومات المتجر -->
+
+        <div class="footer-column">
+
+            <div class="footer-brand">
+                🚗 متجر <span>قطع غيار السيارات</span>
+            </div>
+
+            <p>
+                وجهتك لتصفح قطع غيار السيارات
+                ومستلزماتها، من المحركات والفرامل
+                إلى البطاريات والفلاتر والإكسسوارات.
+            </p>
+
+        </div>
+
+
+        <!-- روابط سريعة -->
+
+        <div class="footer-column">
+
+            <h3>روابط سريعة</h3>
+
+            <a href="index.html#home">الرئيسية</a>
+            <a href="index.html#categories">الأقسام</a>
+            <a href="index.html#products">المنتجات</a>
+            <a href="index.html#offers">العروض</a>
+            <a href="index.html#about">من نحن</a>
+
+        </div>
+
+
+        <!-- أقسام المتجر -->
+
+        <div class="footer-column">
+
+            <h3>أقسام المتجر</h3>
+
+            <a href="index.html#categories">قطع المحركات</a>
+            <a href="index.html#categories">الفرامل</a>
+            <a href="index.html#categories">البطاريات</a>
+            <a href="index.html#categories">الفلاتر</a>
+            <a href="index.html#categories">الزيوت</a>
+            <a href="index.html#categories">الإكسسوارات</a>
+
+        </div>
+
+
+        <!-- معلومات التواصل -->
+
+        <div class="footer-column" id="contact">
+
+            <h3>تواصل معنا</h3>
+
+            <div class="footer-contact">
+
+                <p>
+                    <span id="storeAddress">بيانات الموقع ستتوفر قريبًا</span>
+                </p>
+
+                <p>
+                    <a id="storePhone" hidden>واتساب المتجر</a>
+                </p>
+
+                <p>
+                    <span id="storeHours" hidden></span>
+                </p>
+
+                <p>
+                    <a id="storeEmail" hidden></a>
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- حقوق المتجر -->
+
+    <div class="footer-bottom">
+
+        <span id="copyrightYear">
+            جميع الحقوق محفوظة © متجر قطع غيار السيارات
+        </span>
+
+        <a class="footer-back" href="index.html#home">
+            ↑ العودة للأعلى
+        </a>
+
+    </div>
+
+</footer>
+
+
+<!-- ===================================== -->
+<!-- JavaScript -->
+<!-- ===================================== -->
+
+<script>
+(function () {
+
+    const year = new Date().getFullYear();
+
+    const copyrightElement =
+        document.getElementById("copyrightYear");
+
+    if (copyrightElement) {
+        copyrightElement.textContent =
+            "© " + year +
+            " متجر قطع غيار السيارات - جميع الحقوق محفوظة";
+    }
+
+})();
+</script>

@@ -1,0 +1,1379 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="تواصل مع متجر قطع غيار السيارات للاستفسار عن القطع وتوافقها مع سيارتك وطلبات عروض الأسعار.">
+<title>اتصل بنا | متجر قطع غيار السيارات</title>
+<style>
+:root { --blue: #123c78; --red: #d62828; }
+body { margin: 0; background: #f3f6fb; color: #091d3c; font-family: 'Cairo', Tahoma, sans-serif; }
+[hidden] { display: none !important; }
+.contact-hero { padding: 65px 7% 80px; color: white; background: radial-gradient(ellipse at 15% 30%, #235ca0, transparent 65%), linear-gradient(120deg,#091d3c,#123c78); }
+.contact-hero a { color: #dbe6f5; text-decoration: none; font-size: 13px; }
+.contact-hero h1 { font-size: clamp(32px,5vw,48px); margin: 20px 0 12px; }
+.contact-hero p { max-width: 680px; line-height: 2; color: #dbe6f5; }
+.contact-eyebrow { color: #ffaaaa; font-weight: 700; }
+.contact-layout { max-width: 1200px; margin: -30px auto 65px; padding: 0 5%; display: grid; grid-template-columns: 1.4fr 1fr; gap: 28px; position: relative; }
+.contact-card { background: white; border: 1px solid #e2e8f0; border-radius: 18px; padding: 30px; box-shadow: 0 10px 35px #091d3c0a; }
+.contact-card h2 { margin: 0 0 10px; font-size: 23px; color: #123c78; }
+.contact-card p { font-size: 14px; color: #64748b; line-height: 1.9; }
+.contact-form { display: grid; gap: 18px; }
+.contact-form label { display: grid; gap: 8px; font-size: 14px; font-weight: 700; }
+.contact-form input,.contact-form textarea,.contact-form select { width: 100%; padding: 13px; border: 1px solid #cbd5e1; border-radius: 9px; background: #f8fafc; color: #091d3c; font: inherit; min-width: 0; }
+.contact-form textarea { resize: vertical; min-height: 140px; }
+.contact-form button,.contact-channel { display: inline-block; padding: 13px 22px; background: #d62828; color: white; border: 0; border-radius: 9px; font: inherit; font-weight: 700; text-decoration: none; cursor: pointer; }
+.contact-form button:disabled { opacity: .5; cursor: not-allowed; }
+.contact-detail { padding: 20px 0; border-bottom: 1px solid #e2e8f0; }
+.contact-detail:last-child { border: 0; }
+.contact-detail h3 { margin: 0; font-size: 16px; }
+.contact-detail a { overflow-wrap: anywhere; }
+.contact-note { padding: 15px; background: #f3f6fb; border-radius: 9px; }
+.contact-faq { max-width: 1100px; margin: 0 auto 65px; padding: 0 5%; }
+.contact-faq h2 { color: #123c78; }
+.contact-faq details { background: white; padding: 20px; margin-bottom: 12px; border: 1px solid #e2e8f0; border-radius: 12px; }
+.contact-faq summary { cursor: pointer; font-weight: 700; }
+.contact-faq p { color: #64748b; line-height: 2; }
+.contact-form :focus-visible { outline: 3px solid #123c78; outline-offset: 3px; }
+@media(max-width:800px) { .contact-layout { grid-template-columns: 1fr; } .contact-card { padding: 23px; } .contact-hero { padding: 45px 6% 65px; } }
+@media(prefers-reduced-motion:reduce) { * { scroll-behavior: auto !important; } }
+</style>
+</head>
+<body>
+
+<!-- ====================================== -->
+<!-- HEADER - متجر قطع غيار السيارات -->
+<!-- متوافق مع الكمبيوتر والجوال -->
+<!-- ====================================== -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --blue: #123c78;
+    --blue-dark: #091d3c;
+    --red: #d62828;
+    --red-hover: #af1b1b;
+    --light: #f3f6fb;
+    --white: #ffffff;
+    --font-ar: 'Cairo', Tahoma, Arial, sans-serif;
+}
+
+.site-header,
+.site-header * {
+    box-sizing: border-box;
+}
+
+.site-header {
+    position: relative;
+    z-index: 1000;
+    font-family: var(--font-ar);
+    direction: rtl;
+}
+
+/* ========== الشريط العلوي ========== */
+
+.site-header .top-strip {
+    background: linear-gradient(
+        120deg,
+        #091d3c,
+        #123c78
+    );
+    color: white;
+    padding: 12px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    border-bottom: 2px solid var(--red);
+}
+
+.site-header .top-strip-logo {
+    width: 88px;
+    height: 88px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: white;
+    padding: 7px;
+    border: 3px solid var(--red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow:
+        0 0 0 4px rgba(255,255,255,.12),
+        0 6px 20px rgba(0,0,0,.3);
+    transition: .3s;
+}
+
+.site-header .top-strip-logo:hover {
+    transform: scale(1.06);
+}
+
+.site-header .top-strip-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+    display: block;
+}
+
+.site-header .top-strip-text {
+    text-align: right;
+}
+
+.site-header .top-strip-title {
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.site-header .top-strip-title span {
+    color: #ff7777;
+}
+
+.site-header .top-strip-subtitle {
+    color: #e2e9f5;
+    font-size: 13px;
+    font-weight: 600;
+    margin: 2px 0 0;
+}
+
+/* ========== الهيدر الرئيسي ========== */
+
+.site-header .header-main {
+    background: linear-gradient(
+        120deg,
+        var(--blue),
+        var(--blue-dark)
+    );
+    padding: 20px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.site-header .store-logo {
+    font-size: 23px;
+    font-weight: 900;
+    color: white;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.site-header .store-logo span {
+    color: #ff7474;
+}
+
+/* ========== البحث ========== */
+
+.site-header .header-search {
+    display: flex;
+    flex: 1;
+    max-width: 540px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,.12);
+}
+
+.site-header .header-search input {
+    flex: 1;
+    min-width: 0;
+    padding: 13px 17px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color: var(--blue-dark);
+    background: transparent;
+    font-family: var(--font-ar);
+}
+
+.site-header .header-search input::placeholder {
+    color: #8390a4;
+}
+
+.site-header .header-search button {
+    background: var(--red);
+    color: white;
+    border: 0;
+    padding: 0 26px;
+    font-size: 14px;
+    font-weight: 800;
+    cursor: pointer;
+    font-family: var(--font-ar);
+    transition: .3s;
+}
+
+.site-header .header-search button:hover {
+    background: var(--red-hover);
+}
+
+/* ========== المنتجات والسلة ========== */
+
+.site-header .header-actions {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.site-header .header-actions a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    white-space: nowrap;
+    transition: .3s;
+}
+
+.site-header .header-actions a:hover {
+    color: #ff8b8b;
+}
+
+.site-header .cart-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--red);
+    border-radius: 50%;
+    min-width: 26px;
+    height: 26px;
+    padding: 0 5px;
+    color: white;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+/* ========== قائمة الكمبيوتر ========== */
+
+.site-header .nav-menu {
+    background: white;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 35px;
+    justify-content: center;
+    padding: 14px 20px;
+    border-bottom: 3px solid var(--red);
+    box-shadow: 0 3px 12px rgba(0,0,0,.06);
+}
+
+.site-header .nav-menu a {
+    color: var(--blue);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 800;
+    position: relative;
+    transition: .3s;
+}
+
+.site-header .nav-menu a::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -6px;
+    width: 0;
+    height: 2px;
+    background: var(--red);
+    transition: width .3s;
+}
+
+.site-header .nav-menu a:hover {
+    color: var(--red);
+}
+
+.site-header .nav-menu a:hover::after {
+    width: 100%;
+}
+
+/* ========== زر البرجر ========== */
+.site-header .nav-menu .contact-link {
+    background: var(--red);
+    color: white;
+    padding: 8px 22px;
+    border-radius: 8px;
+}
+
+.site-header .nav-menu .contact-link:hover {
+    color: white;
+    background: var(--red-hover);
+}
+
+.site-header .nav-menu .contact-link::after { display: none; }
+
+.site-header a[aria-current="page"] { font-weight: 900; }
+
+.site-header .menu-toggle {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background: var(--red);
+    border: 1px solid rgba(255,255,255,.3);
+    border-radius: 9px;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: .3s;
+}
+
+.site-header .menu-toggle:hover {
+    background: var(--red-hover);
+}
+
+.site-header .burger-lines {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+.site-header .burger-lines span {
+    display: block;
+    width: 23px;
+    height: 3px;
+    background: white;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.site-header .menu-toggle.active .burger-lines span:first-child {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.site-header .menu-toggle.active .burger-lines span:nth-child(2) {
+    opacity: 0;
+}
+
+.site-header .menu-toggle.active .burger-lines span:last-child {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* ========== القائمة الجانبية للجوال ========== */
+
+.site-header .mobile-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.65);
+    z-index: 1998;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity .3s, visibility .3s;
+}
+
+.site-header .mobile-overlay.show {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.site-header .mobile-sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: min(330px, 85vw);
+    height: 100vh;
+    height: 100dvh;
+    background: linear-gradient(
+        160deg,
+        #091d3c,
+        #123c78
+    );
+    z-index: 1999;
+    transform: translateX(105%);
+    transition: transform .35s ease;
+    box-shadow: -8px 0 30px rgba(0,0,0,.3);
+    overflow-y: auto;
+    visibility: hidden;
+    direction: rtl;
+}
+
+.site-header .mobile-sidebar.open {
+    transform: translateX(0);
+    visibility: visible;
+}
+
+.site-header .sidebar-header {
+    padding: 25px 20px;
+    background: rgba(0,0,0,.15);
+    border-bottom: 2px solid var(--red);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.site-header .sidebar-title {
+    font-size: 17px;
+    font-weight: 900;
+    color: white;
+}
+
+.site-header .sidebar-title span {
+    color: #ff7777;
+}
+
+.site-header .sidebar-close {
+    background: var(--red);
+    color: white;
+    border: 0;
+    width: 38px;
+    height: 38px;
+    border-radius: 8px;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.site-header .mobile-nav {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 15px;
+    gap: 7px;
+}
+
+.site-header .mobile-nav a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 9px;
+    font-size: 15px;
+    font-weight: 700;
+    background: rgba(255,255,255,.05);
+    transition: .3s;
+}
+
+.site-header .mobile-nav a:hover,
+.site-header .mobile-nav a:focus-visible {
+    background: var(--red);
+    padding-right: 23px;
+}
+
+.site-header .mobile-nav a::after {
+    content: "‹";
+    font-size: 23px;
+}
+
+.site-header .sidebar-bottom {
+    margin: 10px 20px 25px;
+    padding: 18px;
+    background: rgba(255,255,255,.07);
+    border-radius: 10px;
+    text-align: center;
+    color: #e2e9f5;
+    font-size: 12px;
+}
+
+.site-header .sidebar-bottom p {
+    margin: 0;
+}
+
+/* ========== التركيز ولوحة المفاتيح ========== */
+
+.site-header a:focus-visible,
+.site-header button:focus-visible,
+.site-header input:focus-visible {
+    outline: 3px solid #ff9999;
+    outline-offset: 3px;
+}
+
+/* ========== الأجهزة اللوحية ========== */
+
+@media (max-width: 900px) {
+
+    .site-header .header-main {
+        flex-wrap: wrap;
+        padding: 16px 5%;
+        gap: 15px;
+    }
+
+    .site-header .store-logo {
+        font-size: 19px;
+    }
+
+    .site-header .header-search {
+        order: 3;
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+    .site-header .header-actions {
+        gap: 12px;
+        margin-right: auto;
+    }
+
+    .site-header .header-actions a {
+        font-size: 12px;
+    }
+
+    .site-header .menu-toggle {
+        display: inline-flex;
+        order: -1;
+    }
+
+    .site-header .nav-menu {
+        display: none;
+    }
+}
+
+/* ========== الهواتف ========== */
+
+@media (max-width: 600px) {
+
+    .site-header .top-strip {
+        padding: 11px 12px;
+        gap: 12px;
+    }
+
+    .site-header .top-strip-logo {
+        width: 64px;
+        height: 64px;
+        padding: 5px;
+    }
+
+    .site-header .top-strip-title {
+        font-size: 14px;
+    }
+
+    .site-header .top-strip-subtitle {
+        font-size: 10px;
+    }
+
+    .site-header .header-main {
+        display: grid;
+        grid-template-columns: 44px minmax(0,1fr) auto;
+        align-items: center;
+        gap: 10px;
+        padding: 14px 4%;
+    }
+
+    .site-header .menu-toggle {
+        grid-column: 1;
+        grid-row: 1;
+        order: initial;
+    }
+
+    .site-header .store-logo {
+        grid-column: 2;
+        grid-row: 1;
+        font-size: 13px;
+        white-space: normal;
+        line-height: 1.5;
+    }
+
+    .site-header .header-actions {
+        grid-column: 3;
+        grid-row: 1;
+        margin: 0;
+        gap: 7px;
+    }
+
+    .site-header .header-actions .products-link {
+        display: none;
+    }
+
+    .site-header .header-actions a {
+        font-size: 11px;
+    }
+
+    .site-header .cart-number {
+        min-width: 22px;
+        height: 22px;
+        font-size: 11px;
+    }
+
+    .site-header .header-search {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        width: 100%;
+        max-width: 100%;
+        margin-top: 3px;
+    }
+
+    .site-header .header-search input {
+        padding: 12px;
+        font-size: 13px;
+    }
+
+    .site-header .header-search button {
+        padding: 0 18px;
+        font-size: 13px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .site-header *,
+    .site-header *::before,
+    .site-header *::after {
+        transition-duration: .01ms !important;
+    }
+}
+</style>
+
+
+<!-- ====================================== -->
+<!-- HTML -->
+<!-- ====================================== -->
+
+<header class="site-header" id="siteHeader">
+
+    <!-- الشريط العلوي والشعار -->
+
+    <div class="top-strip">
+
+        <a href="index.html#home"
+           class="top-strip-logo"
+           aria-label="العودة إلى الرئيسية">
+
+            <img
+                src="media/ddf.png"
+                alt="شعار متجر قطع غيار السيارات"
+                width="72"
+                height="72">
+
+        </a>
+
+        <div class="top-strip-text">
+
+            <p class="top-strip-title">
+                متجر <span>قطع غيار السيارات</span>
+            </p>
+
+            <p class="top-strip-subtitle">
+                الجودة والثقة وأفضل القطع لسيارتك
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- الهيدر الرئيسي -->
+
+    <div class="header-main">
+
+        <!-- علامة البرجر للجوال -->
+
+        <button
+            class="menu-toggle"
+            type="button"
+            id="mobileMenuToggle"
+            aria-label="فتح قائمة التنقل"
+            aria-controls="mobileSidebar"
+            aria-expanded="false">
+
+            <span class="burger-lines">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+
+        </button>
+
+
+        <!-- اسم المتجر -->
+
+        <a href="index.html#home" class="store-logo">
+            🚗 متجر <span>قطع غيار السيارات</span>
+        </a>
+
+
+        <!-- البحث -->
+
+        <form class="header-search" id="searchForm">
+
+            <input
+                type="search"
+                id="searchInput"
+                placeholder="ابحث عن قطعة الغيار..."
+                aria-label="البحث عن المنتجات">
+
+            <button type="submit">
+                بحث
+            </button>
+
+        </form>
+
+
+        <!-- المنتجات والسلة -->
+
+        <div class="header-actions">
+
+            <a href="index.html#products" class="products-link">
+                المنتجات
+            </a>
+
+            <a href="index.html#cart">
+                🛒 السلة
+                <span class="cart-number" id="cartCount">0</span>
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- قائمة الكمبيوتر -->
+
+    <nav class="nav-menu" aria-label="القائمة الرئيسية">
+
+        <a href="index.html#home">الرئيسية</a>
+        <a href="index.html#categories">الأقسام</a>
+        <a href="index.html#products">قطع الغيار</a>
+        <a href="index.html#offers">العروض</a>
+        <a href="index.html#about">من نحن</a>
+        <a href="contact.html" class="contact-link">اتصل بنا</a>
+
+    </nav>
+
+
+    <!-- خلفية سوداء عند فتح القائمة -->
+
+    <div
+        class="mobile-overlay"
+        id="mobileOverlay"
+        aria-hidden="true">
+    </div>
+
+
+    <!-- القائمة الجانبية للجوال -->
+
+    <aside
+        class="mobile-sidebar"
+        id="mobileSidebar"
+        aria-label="قائمة الجوال"
+        aria-hidden="true"
+        inert>
+
+        <div class="sidebar-header">
+
+            <div class="sidebar-title">
+                🚗 متجر <span>قطع الغيار</span>
+            </div>
+
+            <button
+                class="sidebar-close"
+                type="button"
+                id="mobileMenuClose"
+                aria-label="إغلاق القائمة">
+                &times;
+            </button>
+
+        </div>
+
+
+        <!-- روابط القائمة -->
+
+        <nav class="mobile-nav" aria-label="روابط الجوال">
+
+            <a href="index.html#home">
+                الرئيسية
+            </a>
+
+            <a href="index.html#categories">
+                الأقسام
+            </a>
+
+            <a href="index.html#products">
+                قطع الغيار
+            </a>
+
+            <a href="index.html#offers">
+                العروض
+            </a>
+
+            <a href="index.html#about">
+                من نحن
+            </a>
+
+            <a href="contact.html">
+                اتصل بنا
+            </a>
+
+            <a href="index.html#cart">
+                🛒 سلة التسوق
+            </a>
+
+        </nav>
+
+
+        <!-- الجزء السفلي للقائمة -->
+
+        <div class="sidebar-bottom">
+
+            <p>
+                الجودة والثقة وأفضل القطع لسيارتك
+            </p>
+
+        </div>
+
+    </aside>
+
+</header>
+
+
+<!-- ====================================== -->
+<!-- JavaScript -->
+<!-- ====================================== -->
+
+<script>
+(function () {
+
+    "use strict";
+
+    const header = document.getElementById("siteHeader");
+
+    if (!header) return;
+
+    const toggle = header.querySelector("#mobileMenuToggle");
+    const sidebar = header.querySelector("#mobileSidebar");
+    const overlay = header.querySelector("#mobileOverlay");
+    const closeBtn = header.querySelector("#mobileMenuClose");
+    const searchForm = header.querySelector("#searchForm");
+    const searchInput = header.querySelector("#searchInput");
+    const mobileLinks = sidebar.querySelectorAll("a");
+
+    let previousFocus = null;
+
+
+    /* فتح القائمة الجانبية */
+
+    function openMobileMenu() {
+
+        previousFocus = document.activeElement;
+
+        sidebar.removeAttribute("inert");
+
+        sidebar.classList.add("open");
+        overlay.classList.add("show");
+        toggle.classList.add("active");
+
+        sidebar.setAttribute("aria-hidden", "false");
+
+        toggle.setAttribute("aria-expanded", "true");
+        toggle.setAttribute("aria-label", "إغلاق القائمة");
+
+        document.body.style.overflow = "hidden";
+
+        closeBtn.focus();
+
+    }
+
+
+    /* إغلاق القائمة الجانبية */
+
+    function closeMobileMenu() {
+
+        sidebar.classList.remove("open");
+        overlay.classList.remove("show");
+        toggle.classList.remove("active");
+
+        toggle.setAttribute("aria-expanded", "false");
+        toggle.setAttribute("aria-label", "فتح قائمة التنقل");
+
+        if (previousFocus &&
+            typeof previousFocus.focus === "function") {
+            previousFocus.focus();
+        } else {
+            toggle.focus();
+        }
+
+        sidebar.setAttribute("aria-hidden", "true");
+        sidebar.setAttribute("inert", "");
+
+        document.body.style.overflow = "";
+
+    }
+
+
+    /* زر الثلاث شرطات */
+
+    toggle.addEventListener("click", function () {
+
+        if (sidebar.classList.contains("open")) {
+            closeMobileMenu();
+        } else {
+            openMobileMenu();
+        }
+
+    });
+
+
+    /* زر الإغلاق */
+
+    closeBtn.addEventListener("click", closeMobileMenu);
+
+
+    /* الضغط خارج القائمة */
+
+    overlay.addEventListener("click", closeMobileMenu);
+
+
+    /* إغلاق القائمة عند اختيار رابط */
+
+    mobileLinks.forEach(function (link) {
+
+        link.addEventListener("click", closeMobileMenu);
+
+    });
+
+
+    /* إغلاق القائمة بمفتاح Escape */
+
+    document.addEventListener("keydown", function (event) {
+
+        if (!sidebar.classList.contains("open")) return;
+
+        if (event.key === "Escape") {
+            closeMobileMenu();
+        }
+
+        if (event.key === "Tab") {
+
+            const focusable = Array.from(
+                sidebar.querySelectorAll(
+                    'a[href], button:not([disabled])'
+                )
+            );
+
+            const first = focusable[0];
+            const last = focusable[focusable.length - 1];
+
+            if (event.shiftKey &&
+                document.activeElement === first) {
+                event.preventDefault();
+                last.focus();
+            } else if (
+                !event.shiftKey &&
+                document.activeElement === last
+            ) {
+                event.preventDefault();
+                first.focus();
+            }
+        }
+
+    });
+
+
+    /* إغلاق القائمة عند التحول لوضع الكمبيوتر */
+
+    const desktopQuery =
+        window.matchMedia("(min-width: 901px)");
+
+    function handleScreenChange(event) {
+
+        if (event.matches &&
+            sidebar.classList.contains("open")) {
+            closeMobileMenu();
+        }
+
+    }
+
+    desktopQuery.addEventListener(
+        "change",
+        handleScreenChange
+    );
+
+
+    /* البحث - متوافق مع index.html */
+
+    searchForm.addEventListener("submit", function (event) {
+
+        event.preventDefault();
+
+        const query = searchInput.value.trim();
+
+        if (!document.getElementById("productGrid")) {
+            window.location.href = "index.html?search=" + encodeURIComponent(query) + "#products";
+            return;
+        }
+
+        document.dispatchEvent(
+            new CustomEvent("store-search", {
+                detail: {
+                    query: query
+                }
+            })
+        );
+
+        const products = document.getElementById("products");
+
+        if (products) {
+            products.scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+
+    });
+
+})();
+</script>
+
+<main>
+    <section class="contact-hero">
+        <a href="index.html">الرئيسية</a> / <span>اتصل بنا</span>
+        <h1>القطعة المناسبة تبدأ بسؤال.</h1>
+        <span class="contact-eyebrow">اتصل بنا</span>
+        <p>هل تبحث عن قطعة لسيارتك؟ شاركنا نوع السيارة والموديل وتفاصيل القطعة، وتواصل معنا للاستفسار عن التوافق والتوفر وعرض السعر.</p>
+    </section>
+    <div class="contact-layout">
+        <section class="contact-card">
+            <h2>كيف يمكننا مساعدتك؟</h2>
+            <p>اكتب استفسارك واختر قناة التواصل المتاحة.</p>
+            <form class="contact-form" id="contactForm">
+                <label>الاسم <input name="customer" autocomplete="name" required maxlength="80"></label>
+                <label>نوع الاستفسار <select name="subject"><option>استفسار عن قطعة غيار</option><option>طلب عرض سعر</option><option>متابعة طلب</option><option>استفسار آخر</option></select></label>
+                <label>نوع السيارة والموديل <input name="vehicle" maxlength="120" placeholder="مثال: تويوتا كامري 2020"></label>
+                <label>رسالتك <textarea name="message" required maxlength="2000" placeholder="اذكر تفاصيل القطعة أو رقمها إن توفر"></textarea></label>
+                <label>قناة التواصل <select name="channel" id="contactChannel"><option value="">لا توجد قناة متاحة حاليًا</option></select></label>
+                <button id="contactSubmit" type="submit" disabled>متابعة الإرسال</button>
+                <p class="contact-note" id="contactStatus" role="status">ستتاح المراسلة عند توفر بيانات التواصل الخاصة بالمتجر.</p>
+            </form>
+        </section>
+        <aside class="contact-card">
+            <h2>طرق التواصل</h2>
+            <p>اختر الطريقة المناسبة لاستفسارك.</p>
+            <div class="contact-detail"><h3>واتساب</h3><p id="whatsappNotice">سيُضاف رقم المتجر قريبًا.</p><a class="contact-channel" id="contactWhatsapp" hidden>تواصل عبر واتساب</a></div>
+            <div class="contact-detail"><h3>البريد الإلكتروني</h3><p id="emailNotice">سيُضاف البريد الإلكتروني قريبًا.</p><a id="contactEmail" hidden></a></div>
+            <div class="contact-detail"><h3>العنوان</h3><p id="contactAddress">ستتوفر بيانات الموقع قريبًا.</p></div>
+            <div class="contact-detail"><h3>ساعات العمل</h3><p id="contactHours">ستُعلن ساعات العمل قريبًا.</p></div>
+            <p class="contact-note">للاستفسار عن توافق قطعة، جهّز نوع السيارة وسنة الصنع ورقم القطعة إن توفر.</p>
+        </aside>
+    </div>
+    <section class="contact-faq">
+        <h2>أسئلة شائعة</h2>
+        <details><summary>كيف أطلب عرض سعر؟</summary><p>أضف القطع إلى السلة في الصفحة الرئيسية، ثم أكمل بيانات السيارة واستخدم قناة التواصل المتاحة لطلب تأكيد السعر والتوفر.</p></details>
+        <details><summary>كيف أتأكد من توافق القطعة مع سيارتي؟</summary><p>أرسل نوع السيارة والموديل وسنة الصنع ورقم القطعة إن توفر، واطلب تأكيد التوافق قبل الشراء.</p></details>
+        <details><summary>هل يمكن الدفع عبر الموقع؟</summary><p>الدفع الإلكتروني غير متاح حاليًا. استفسر من المتجر عن السعر النهائي والشحن وطريقة الدفع قبل إتمام الشراء.</p></details>
+    </section>
+</main>
+
+<!-- ===================================== -->
+<!-- الشريط السفلي لمتجر قطع غيار السيارات -->
+<!-- footer.html -->
+<!-- ===================================== -->
+
+<style>
+.store-footer {
+    background: linear-gradient(120deg, #091d3c, #123c78);
+    color: #e2eaf6;
+    padding: 65px 7% 0;
+    font-family: 'Cairo', Tahoma, Arial, sans-serif;
+    direction: rtl;
+}
+
+.store-footer * {
+    box-sizing: border-box;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    gap: 35px;
+}
+
+.footer-column h3 {
+    color: white;
+    font-size: 19px;
+    margin: 0 0 22px;
+    font-weight: 800;
+}
+
+.footer-column h3::after {
+    content: "";
+    display: block;
+    width: 45px;
+    height: 3px;
+    background: #d62828;
+    margin-top: 12px;
+}
+
+.footer-column p {
+    font-size: 14px;
+    line-height: 2.1;
+    color: #c9d6e8;
+}
+
+.footer-column a {
+    display: block;
+    color: #c9d6e8;
+    font-size: 14px;
+    text-decoration: none;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+.footer-column a:hover {
+    color: #ff6868;
+    padding-right: 5px;
+}
+
+.footer-brand {
+    font-size: 23px;
+    color: white;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.footer-brand span {
+    color: #ff6262;
+}
+
+.footer-contact {
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer-contact a {
+    overflow-wrap: anywhere;
+}
+
+.footer-bottom {
+    border-top: 1px solid #ffffff27;
+    margin-top: 45px;
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    font-size: 13px;
+    color: #cfdaea;
+}
+
+.footer-back {
+    background: #d62828;
+    color: white !important;
+    padding: 10px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-back:hover {
+    background: #af1b1b;
+    transform: translateY(-3px);
+}
+
+/* الأجهزة اللوحية */
+
+@media (max-width: 950px) {
+    .footer-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* الهواتف */
+
+@media (max-width: 600px) {
+    .store-footer {
+        padding: 45px 6% 0;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer-brand {
+        font-size: 20px;
+    }
+}
+</style>
+
+
+<!-- ===================================== -->
+<!-- HTML الشريط السفلي -->
+<!-- ===================================== -->
+
+<footer class="store-footer" id="site-footer">
+
+    <div class="footer-grid">
+
+        <!-- معلومات المتجر -->
+
+        <div class="footer-column">
+
+            <div class="footer-brand">
+                🚗 متجر <span>قطع غيار السيارات</span>
+            </div>
+
+            <p>
+                وجهتك لتصفح قطع غيار السيارات
+                ومستلزماتها، من المحركات والفرامل
+                إلى البطاريات والفلاتر والإكسسوارات.
+            </p>
+
+        </div>
+
+
+        <!-- روابط سريعة -->
+
+        <div class="footer-column">
+
+            <h3>روابط سريعة</h3>
+
+            <a href="index.html#home">الرئيسية</a>
+            <a href="index.html#categories">الأقسام</a>
+            <a href="index.html#products">المنتجات</a>
+            <a href="index.html#offers">العروض</a>
+            <a href="index.html#about">من نحن</a>
+
+        </div>
+
+
+        <!-- أقسام المتجر -->
+
+        <div class="footer-column">
+
+            <h3>أقسام المتجر</h3>
+
+            <a href="index.html#categories">قطع المحركات</a>
+            <a href="index.html#categories">الفرامل</a>
+            <a href="index.html#categories">البطاريات</a>
+            <a href="index.html#categories">الفلاتر</a>
+            <a href="index.html#categories">الزيوت</a>
+            <a href="index.html#categories">الإكسسوارات</a>
+
+        </div>
+
+
+        <!-- معلومات التواصل -->
+
+        <div class="footer-column" id="contact">
+
+            <h3>تواصل معنا</h3>
+
+            <div class="footer-contact">
+
+                <p>
+                    <span id="storeAddress">بيانات الموقع ستتوفر قريبًا</span>
+                </p>
+
+                <p>
+                    <a id="storePhone" hidden>واتساب المتجر</a>
+                </p>
+
+                <p>
+                    <span id="storeHours" hidden></span>
+                </p>
+
+                <p>
+                    <a id="storeEmail" hidden></a>
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- حقوق المتجر -->
+
+    <div class="footer-bottom">
+
+        <span id="copyrightYear">
+            جميع الحقوق محفوظة © متجر قطع غيار السيارات
+        </span>
+
+        <a class="footer-back" href="index.html#home">
+            ↑ العودة للأعلى
+        </a>
+
+    </div>
+
+</footer>
+
+
+<!-- ===================================== -->
+<!-- JavaScript -->
+<!-- ===================================== -->
+
+<script>
+(function () {
+
+    const year = new Date().getFullYear();
+
+    const copyrightElement =
+        document.getElementById("copyrightYear");
+
+    if (copyrightElement) {
+        copyrightElement.textContent =
+            "© " + year +
+            " متجر قطع غيار السيارات - جميع الحقوق محفوظة";
+    }
+
+})();
+</script>
+
+<script src="store-config.js"></script>
+<script>
+(() => {
+    const config = window.storeConfig || {};
+    const number = String(config.whatsapp || '').replace(/[^0-9]/g, '');
+    const hasWhatsapp = /^\d{8,15}$/.test(number);
+    const hasEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(config.email || '');
+    const channel = document.getElementById('contactChannel');
+    const link = (id, href, text) => {
+        const element = document.getElementById(id);
+        element.href = href;
+        if (text) element.textContent = text;
+        element.hidden = false;
+    };
+    if (hasWhatsapp || hasEmail) {
+        channel.replaceChildren();
+        document.getElementById('contactSubmit').disabled = false;
+        document.getElementById('contactStatus').textContent = 'يفتح الزر تطبيق التواصل لمراجعة الرسالة وإرسالها بنفسك. لا تُحفظ بيانات النموذج في الموقع.';
+    }
+    if (hasWhatsapp) {
+        channel.add(new Option('واتساب', 'whatsapp'));
+        link('contactWhatsapp', 'https://wa.me/' + number);
+        link('storePhone', 'https://wa.me/' + number);
+        document.getElementById('whatsappNotice').hidden = true;
+    }
+    if (hasEmail) {
+        channel.add(new Option('البريد الإلكتروني', 'email'));
+        link('contactEmail', 'mailto:' + config.email, config.email);
+        link('storeEmail', 'mailto:' + config.email, config.email);
+        document.getElementById('emailNotice').hidden = true;
+    }
+    if (config.address) {
+        document.getElementById('contactAddress').textContent = config.address;
+        document.getElementById('storeAddress').textContent = config.address;
+    }
+    if (config.hours) {
+        document.getElementById('contactHours').textContent = config.hours;
+        const hours = document.getElementById('storeHours');
+        hours.textContent = config.hours; hours.hidden = false;
+    }
+    try {
+        const items = JSON.parse(localStorage.getItem('autoPartsCart') || '[]');
+        if (Array.isArray(items)) document.getElementById('cartCount').textContent = items.reduce((sum, item) => sum + (item && Number.isInteger(item.quantity) && item.quantity > 0 ? item.quantity : 0), 0);
+    } catch (_) {}
+    document.querySelectorAll('a[href="contact.html"]').forEach(a => a.setAttribute('aria-current', 'page'));
+    document.getElementById('contactForm').addEventListener('submit', event => {
+        event.preventDefault();
+        const data = new FormData(event.currentTarget);
+        const subject = String(data.get('subject'));
+        const message = [subject, 'الاسم: ' + data.get('customer'), 'السيارة: ' + data.get('vehicle'), String(data.get('message'))].join('\n');
+        if (channel.value === 'whatsapp' && hasWhatsapp) window.open('https://wa.me/' + number + '?text=' + encodeURIComponent(message), '_blank', 'noopener,noreferrer');
+        else if (channel.value === 'email' && hasEmail) window.location.href = 'mailto:' + config.email + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(message);
+    });
+})();
+</script>
+</body>
+</html>

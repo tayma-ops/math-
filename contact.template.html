@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="تواصل مع متجر قطع غيار السيارات للاستفسار عن القطع وتوافقها مع سيارتك وطلبات عروض الأسعار.">
+<title>اتصل بنا | متجر قطع غيار السيارات</title>
+<style>
+:root { --blue: #123c78; --red: #d62828; }
+body { margin: 0; background: #f3f6fb; color: #091d3c; font-family: 'Cairo', Tahoma, sans-serif; }
+[hidden] { display: none !important; }
+.contact-hero { padding: 65px 7% 80px; color: white; background: radial-gradient(ellipse at 15% 30%, #235ca0, transparent 65%), linear-gradient(120deg,#091d3c,#123c78); }
+.contact-hero a { color: #dbe6f5; text-decoration: none; font-size: 13px; }
+.contact-hero h1 { font-size: clamp(32px,5vw,48px); margin: 20px 0 12px; }
+.contact-hero p { max-width: 680px; line-height: 2; color: #dbe6f5; }
+.contact-eyebrow { color: #ffaaaa; font-weight: 700; }
+.contact-layout { max-width: 1200px; margin: -30px auto 65px; padding: 0 5%; display: grid; grid-template-columns: 1.4fr 1fr; gap: 28px; position: relative; }
+.contact-card { background: white; border: 1px solid #e2e8f0; border-radius: 18px; padding: 30px; box-shadow: 0 10px 35px #091d3c0a; }
+.contact-card h2 { margin: 0 0 10px; font-size: 23px; color: #123c78; }
+.contact-card p { font-size: 14px; color: #64748b; line-height: 1.9; }
+.contact-form { display: grid; gap: 18px; }
+.contact-form label { display: grid; gap: 8px; font-size: 14px; font-weight: 700; }
+.contact-form input,.contact-form textarea,.contact-form select { width: 100%; padding: 13px; border: 1px solid #cbd5e1; border-radius: 9px; background: #f8fafc; color: #091d3c; font: inherit; min-width: 0; }
+.contact-form textarea { resize: vertical; min-height: 140px; }
+.contact-form button,.contact-channel { display: inline-block; padding: 13px 22px; background: #d62828; color: white; border: 0; border-radius: 9px; font: inherit; font-weight: 700; text-decoration: none; cursor: pointer; }
+.contact-form button:disabled { opacity: .5; cursor: not-allowed; }
+.contact-detail { padding: 20px 0; border-bottom: 1px solid #e2e8f0; }
+.contact-detail:last-child { border: 0; }
+.contact-detail h3 { margin: 0; font-size: 16px; }
+.contact-detail a { overflow-wrap: anywhere; }
+.contact-note { padding: 15px; background: #f3f6fb; border-radius: 9px; }
+.contact-faq { max-width: 1100px; margin: 0 auto 65px; padding: 0 5%; }
+.contact-faq h2 { color: #123c78; }
+.contact-faq details { background: white; padding: 20px; margin-bottom: 12px; border: 1px solid #e2e8f0; border-radius: 12px; }
+.contact-faq summary { cursor: pointer; font-weight: 700; }
+.contact-faq p { color: #64748b; line-height: 2; }
+.contact-form :focus-visible { outline: 3px solid #123c78; outline-offset: 3px; }
+@media(max-width:800px) { .contact-layout { grid-template-columns: 1fr; } .contact-card { padding: 23px; } .contact-hero { padding: 45px 6% 65px; } }
+@media(prefers-reduced-motion:reduce) { * { scroll-behavior: auto !important; } }
+</style>
+</head>
+<body>
+{% include 'header.html' %}
+<main>
+    <section class="contact-hero">
+        <a href="index.html">الرئيسية</a> / <span>اتصل بنا</span>
+        <h1>القطعة المناسبة تبدأ بسؤال.</h1>
+        <span class="contact-eyebrow">اتصل بنا</span>
+        <p>هل تبحث عن قطعة لسيارتك؟ شاركنا نوع السيارة والموديل وتفاصيل القطعة، وتواصل معنا للاستفسار عن التوافق والتوفر وعرض السعر.</p>
+    </section>
+    <div class="contact-layout">
+        <section class="contact-card">
+            <h2>كيف يمكننا مساعدتك؟</h2>
+            <p>اكتب استفسارك واختر قناة التواصل المتاحة.</p>
+            <form class="contact-form" id="contactForm">
+                <label>الاسم <input name="customer" autocomplete="name" required maxlength="80"></label>
+                <label>نوع الاستفسار <select name="subject"><option>استفسار عن قطعة غيار</option><option>طلب عرض سعر</option><option>متابعة طلب</option><option>استفسار آخر</option></select></label>
+                <label>نوع السيارة والموديل <input name="vehicle" maxlength="120" placeholder="مثال: تويوتا كامري 2020"></label>
+                <label>رسالتك <textarea name="message" required maxlength="2000" placeholder="اذكر تفاصيل القطعة أو رقمها إن توفر"></textarea></label>
+                <label>قناة التواصل <select name="channel" id="contactChannel"><option value="">لا توجد قناة متاحة حاليًا</option></select></label>
+                <button id="contactSubmit" type="submit" disabled>متابعة الإرسال</button>
+                <p class="contact-note" id="contactStatus" role="status">ستتاح المراسلة عند توفر بيانات التواصل الخاصة بالمتجر.</p>
+            </form>
+        </section>
+        <aside class="contact-card">
+            <h2>طرق التواصل</h2>
+            <p>اختر الطريقة المناسبة لاستفسارك.</p>
+            <div class="contact-detail"><h3>واتساب</h3><p id="whatsappNotice">سيُضاف رقم المتجر قريبًا.</p><a class="contact-channel" id="contactWhatsapp" hidden>تواصل عبر واتساب</a></div>
+            <div class="contact-detail"><h3>البريد الإلكتروني</h3><p id="emailNotice">سيُضاف البريد الإلكتروني قريبًا.</p><a id="contactEmail" hidden></a></div>
+            <div class="contact-detail"><h3>العنوان</h3><p id="contactAddress">ستتوفر بيانات الموقع قريبًا.</p></div>
+            <div class="contact-detail"><h3>ساعات العمل</h3><p id="contactHours">ستُعلن ساعات العمل قريبًا.</p></div>
+            <p class="contact-note">للاستفسار عن توافق قطعة، جهّز نوع السيارة وسنة الصنع ورقم القطعة إن توفر.</p>
+        </aside>
+    </div>
+    <section class="contact-faq">
+        <h2>أسئلة شائعة</h2>
+        <details><summary>كيف أطلب عرض سعر؟</summary><p>أضف القطع إلى السلة في الصفحة الرئيسية، ثم أكمل بيانات السيارة واستخدم قناة التواصل المتاحة لطلب تأكيد السعر والتوفر.</p></details>
+        <details><summary>كيف أتأكد من توافق القطعة مع سيارتي؟</summary><p>أرسل نوع السيارة والموديل وسنة الصنع ورقم القطعة إن توفر، واطلب تأكيد التوافق قبل الشراء.</p></details>
+        <details><summary>هل يمكن الدفع عبر الموقع؟</summary><p>الدفع الإلكتروني غير متاح حاليًا. استفسر من المتجر عن السعر النهائي والشحن وطريقة الدفع قبل إتمام الشراء.</p></details>
+    </section>
+</main>
+{% include 'footer.html' %}
+<script src="store-config.js"></script>
+<script>
+(() => {
+    const config = window.storeConfig || {};
+    const number = String(config.whatsapp || '').replace(/[^0-9]/g, '');
+    const hasWhatsapp = /^\d{8,15}$/.test(number);
+    const hasEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(config.email || '');
+    const channel = document.getElementById('contactChannel');
+    const link = (id, href, text) => {
+        const element = document.getElementById(id);
+        element.href = href;
+        if (text) element.textContent = text;
+        element.hidden = false;
+    };
+    if (hasWhatsapp || hasEmail) {
+        channel.replaceChildren();
+        document.getElementById('contactSubmit').disabled = false;
+        document.getElementById('contactStatus').textContent = 'يفتح الزر تطبيق التواصل لمراجعة الرسالة وإرسالها بنفسك. لا تُحفظ بيانات النموذج في الموقع.';
+    }
+    if (hasWhatsapp) {
+        channel.add(new Option('واتساب', 'whatsapp'));
+        link('contactWhatsapp', 'https://wa.me/' + number);
+        link('storePhone', 'https://wa.me/' + number);
+        document.getElementById('whatsappNotice').hidden = true;
+    }
+    if (hasEmail) {
+        channel.add(new Option('البريد الإلكتروني', 'email'));
+        link('contactEmail', 'mailto:' + config.email, config.email);
+        link('storeEmail', 'mailto:' + config.email, config.email);
+        document.getElementById('emailNotice').hidden = true;
+    }
+    if (config.address) {
+        document.getElementById('contactAddress').textContent = config.address;
+        document.getElementById('storeAddress').textContent = config.address;
+    }
+    if (config.hours) {
+        document.getElementById('contactHours').textContent = config.hours;
+        const hours = document.getElementById('storeHours');
+        hours.textContent = config.hours; hours.hidden = false;
+    }
+    try {
+        const items = JSON.parse(localStorage.getItem('autoPartsCart') || '[]');
+        if (Array.isArray(items)) document.getElementById('cartCount').textContent = items.reduce((sum, item) => sum + (item && Number.isInteger(item.quantity) && item.quantity > 0 ? item.quantity : 0), 0);
+    } catch (_) {}
+    document.querySelectorAll('a[href="contact.html"]').forEach(a => a.setAttribute('aria-current', 'page'));
+    document.getElementById('contactForm').addEventListener('submit', event => {
+        event.preventDefault();
+        const data = new FormData(event.currentTarget);
+        const subject = String(data.get('subject'));
+        const message = [subject, 'الاسم: ' + data.get('customer'), 'السيارة: ' + data.get('vehicle'), String(data.get('message'))].join('\n');
+        if (channel.value === 'whatsapp' && hasWhatsapp) window.open('https://wa.me/' + number + '?text=' + encodeURIComponent(message), '_blank', 'noopener,noreferrer');
+        else if (channel.value === 'email' && hasEmail) window.location.href = 'mailto:' + config.email + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(message);
+    });
+})();
+</script>
+</body>
+</html>
