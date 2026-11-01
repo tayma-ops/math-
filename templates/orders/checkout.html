@@ -1,0 +1,1 @@
+{% extends 'commerce_base.html' %}{% block content %}<h1>إتمام الطلب</h1><p>سيُحفظ الطلب وتُحجز الكمية المتوفرة. الدفع عند الاستلام؛ لا تُدخل بيانات بطاقة.</p><form method="post" class="panel">{% csrf_token %}{{ form.as_p }}<button>تأكيد الطلب</button></form>{% endblock %}

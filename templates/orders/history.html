@@ -1,0 +1,1 @@
+{% extends 'commerce_base.html' %}{% block content %}<h1>طلباتي</h1>{% for order in orders %}<article class="panel"><a href="{% url 'orders:detail' order.pk %}">الطلب #{{ order.pk }}</a><p>{{ order.get_status_display }} · {{ order.total_price }} ر.س · {{ order.created_at|date:'Y-m-d' }}</p></article>{% empty %}<p>لا توجد طلبات بعد.</p>{% endfor %}{% endblock %}
